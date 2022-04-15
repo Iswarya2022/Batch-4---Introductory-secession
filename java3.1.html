@@ -1,0 +1,23 @@
+java3.1
+<!DOCTYPE html>
+<html>
+    <head>
+        <h2>string operations</h2>
+    </head>
+    <p id="demo"></p>
+    <p id="demo1"></p>
+    <p id="demo2"></p>
+    <p id="demo3"></p>
+    <p id="demo4"></p>
+    <body>
+        <script>
+            let txt = "ISWARYA";
+            document.getElementById("demo").innerHTML= txt.length;
+            let a="I am iswarya";
+            document.getElementById("demo1").innerHTML=a.search("iswarya");
+            document.getElementById("demo2").innerHTML=a.indexOf("am");
+            document.getElementById("demo4").innerHTML=a.replace("iswarya","katari");
+            document.getElementById("demo3").innerHTML=a.match("I");
+        </script>
+    </body>
+</html>
