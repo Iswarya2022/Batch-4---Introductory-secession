@@ -1,0 +1,19 @@
+javaD2.4
+<!DOCTYPE html>
+<html>
+    <body>
+        <p id="demo"></p>
+        <h2>reverse of a number</h2>
+        <script>
+            let a=123;
+            let rev=0;
+            let r=0;
+            while(a!=0){
+                r=a%10;
+                rev=rev*10+r;
+                a=Math.floor(a/10);
+            }
+            document.getElementById("demo").innerHTML=rev;
+        </script>
+    </body>
+</html>

@@ -1,0 +1,28 @@
+javaD2.3
+<!DOCTYPE html>
+<html>
+    <body>
+        <h2>java script</h2>
+        <p>display elements in array,object</p>
+        <p id="demo"></p>
+        <p id="d"></p>
+        <script>
+           //let name=["Iswarya","priya","teja"];
+            //document.getElementById("demo").innerHTML=name[1];
+            const student={
+                name : "iswarya",
+                lname:"katari",
+                grade:"A",
+
+            };
+            const marks={
+                dcs:"80",
+                hvdc:"75",
+                eds:"78",
+                hve:"80",
+            };
+            document.getElementById("demo").innerHTML=student.name + student.lname+" is a good student having "+student.grade+" grade";
+            document.getElementById("d").innerHTML="scores of individual subjects are:"+"<br>"+"DCS = "+marks.dcs+"<br>"+"HVDC = "+marks.hvdc+"<br>"+"HVE = "+marks.hve+"<br>"+"EDS = "+marks.eds;
+        </script>
+    </body>
+</html>

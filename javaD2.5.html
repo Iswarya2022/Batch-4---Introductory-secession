@@ -1,0 +1,39 @@
+javaD2.5
+<!DOCTYPE html>
+<html>
+    <body>
+        <h2>Array operations</h2>
+        <p id="demo"></p>
+        <p id="a"></p>
+        <p id="b"></p>
+        <p id="c"></p>
+        <p id="d"></p>
+        <p id="e"></p>
+        <p id="f"></p>
+        <p id="g"></p>
+        <p id="h"></p>
+        <script>
+            //The JavaScript method toString() converts an array to a string of (comma separated) array values.
+            const fruits = ["Banana", "Orange", "Apple", "Mango"];
+            document.getElementById("demo").innerHTML = fruits.toString();
+            //The join() method also joins all array elements into a string.
+           //It behaves just like toString(), but in addition you can specify the separator:
+           document.getElementById("a").innerHTML = fruits.join(" * ");
+           //The pop() method returns the value that was "popped out":
+           document.getElementById("b").innerHTML = fruits.pop();
+           //The push() method returns the new array length:
+           document.getElementById("c").innerHTML = fruits.push("Kiwi");
+           //The shift() method returns the value that was "shifted out":
+           //The shift() method removes the first array element and "shifts" all other elements to a lower index.
+           document.getElementById("d").innerHTML =fruits.shift();
+           //The unshift() method adds a new element to an array (at the beginning), and "unshifts" older elements:
+           //The unshift() method returns the new array length.
+           document.getElementById("e").innerHTML =fruits.unshift("Lemon");
+           //The length property provides an easy way to append a new element to an array:
+           document.getElementById("f").innerHTML = fruits[fruits.length] = "Kiwi";
+           document.getElementById("g").innerHTML =delete fruits[0];
+           //
+
+        </script>
+    </body>
+</html>

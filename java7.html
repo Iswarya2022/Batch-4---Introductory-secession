@@ -1,0 +1,22 @@
+java7
+<!DOCTYPE html>
+<html>
+    <body>
+        <img id="myimage" onclick="changeimage()"src="off.jpg"width="200"height="200">
+        <script>
+            function changeimage()
+            {
+                var image=document.getElementById('myimage');
+                if(image.src.match("off.jpg"))
+                {
+                    image.src="on.jpg";
+                
+                }
+                else{
+                    image.src="off.jpg";
+                }
+
+            }
+        </script>
+    </body>
+</html>
